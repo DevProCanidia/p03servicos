@@ -46,22 +46,5 @@ window.onload = function() {
 		}
 	}
 
-	/*
-	initialize();
 
-	var conteudo = '<p style="color:black;font-size:12px;padding:10px 0;border:1px solid red;">Rua Tulipa, Bairro Jardim Iracema - Fortaleza-CE</p>';
-	addMarker(-3.7171655,-38.58053,'',conteudo,true);
-
-	//Função nativa do js: executa no momento que vc personalizar
-		setTimeout(function(){ seta 2 funções mostrar e tempo
-		map.panTo({'lat':-3.723540,'lng':-38.563840})//1-posição a ser mostrada
-	},5000)//2-tempo de 5segundos para executar*/
-
-	/* Método de trocar o endereço da visão de mapa 
-	map.panTo({'lat':-3.723540,'lng':-38.563840});
-	*/
-
-	/*Método de zoom*/
-
-	//}
-})
+}

@@ -33,7 +33,6 @@ header{
 }
 
 header nav{
-
 	float: right;
 }
 
@@ -43,13 +42,10 @@ nav.mobile-menu{
 	width: 32px;
 	height: 32px;
 	background-image: url('../images/menu-mob.png');
-	background-size: 100% 100%;
+	background-size: 100% 100%;	
 }
 
-/*nav.mobile-menu:hover ul{ /*efeito de transparência*/
-	/*opacity: 1;
-}
-*/
+
 nav.mobile-menu ul{
 	display: none;
 	/*transition: 1s;*/
@@ -75,7 +71,6 @@ header nav.mobile-menu ul li:hover{
 header nav.mobile-menu ul li a{
 	color: black;
 	text-decoration: none;
-
 }
 
 header .logo{
@@ -84,7 +79,7 @@ header .logo{
 	float: left;
 	width: 170px;
 	height: 40px;
-	background-image: url('../images/logo.jpg');
+	background-image: url('../images/logo.png');
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -101,8 +96,7 @@ header nav.desktop-menu ul li{
 
 header nav.desktop-menu li a{
 	text-decoration: none;
-	color: white;
-	
+	color: white;	
 }
 
 .chamada1{
@@ -112,7 +106,7 @@ header nav.desktop-menu li a{
 }
 
 .chamada1 h2{
-	font-size: 45px;
+	font-size: 1.5rem;
 	color: white;
 	font-weight: 300;
 }
@@ -174,13 +168,18 @@ section.sessao1 .container{
 	background-color: #FF703D;
 	width: 170px;
 	height: 45px;
-	color: white;
-	font-size: 13px;
-	cursor: pointer;
+	
 	border-radius: 30px;
 	text-align: center;
-	line-height: 45px;
-	
+	line-height: 45px;	
+}
+
+.mapouter a,
+.btn1-texto a{
+	text-decoration: none;	
+	font-size: 16px;
+	color: white;	
+	cursor: pointer;
 }
 
 .device-sessao1{
@@ -302,7 +301,7 @@ section.sessao2 .container{
 	float: left;
 	width: 40px;
 	height: 40px;
-	background-image: url('../images/caniggia.jpg');
+	background-image: url('../images/dpc.jpg');
 	background-size: 100% 100%;
 	position: relative;
 	background-color: transparent;
@@ -374,7 +373,7 @@ section.sessao2 .container{
 	border: 1px solid rgb(200, 200, 200);
 }
 
-.form form textarea{
+.form form > textarea{
 	width: 90%;
 	max-width: 480px;
 	margin-top: 8px;
@@ -386,7 +385,7 @@ section.sessao2 .container{
 .form form input[type=submit]{
 	border: 0;/*resetar a borda padrao do submit*/
 	background-color: #FF703D;
-	width: 170px;
+	width: 150px;
 	height: 45px;
 	color: white;
 	font-size: 17px;
@@ -478,6 +477,7 @@ footer{
 	padding: 40px 2%;
 	background:  #192123;
 	color: white;
+	text-align: center;
 }
 
 footer p:nth-of-type(1){
@@ -490,10 +490,15 @@ footer p:nth-of-type(2){
 	font-size: 14px;
 }
 
+footer a{
+	text-decoration: none;
+	color: rgb(45, 180, 221);
+}
+
 
 /****************************** R E S P O N S I V O - 830px ****************************************/
 
-@media screen and (max-width: 830px){
+@media screen and (min-width: 830px){
 
 	.chamada1{
 		max-width: none;
@@ -515,7 +520,16 @@ footer p:nth-of-type(2){
 		color: white;
 		margin-top: 10px;
 	}
+	footer p:nth-of-type(1){
+		float: none;	
+		}
 	
+	footer p:nth-of-type(2){
+		float: none;
+		padding-top: 10px;	
+		}
+	
+
 }
 
 /****************************** R E S P O N S I V O - 768px ****************************************/
@@ -578,13 +592,18 @@ section.sessao1{
 	padding-top: 40px;
 	}
 
+.sessao-4{
+	display: inline-block;
+}
+	
 section.sessao4 .container{
 	text-align: center;
+
 	}
 
 .form{
 	float: none;
-	width: 100%;
+	width: 90%;
 	padding-left: 2%;
 	}
 .form p{
@@ -599,7 +618,7 @@ section.sessao4 .container{
 .map-wraper{
 	float: none;
 	width: 100%;
-	padding: 0 2%;
+	padding: 0 1%;
 	margin-top: 40px;
 	}
 
@@ -636,8 +655,20 @@ section.diferenciais{
 .box-single-diferencial p{
 	display: inline-block;
 	max-width: 400px;
-
 	}
+	footer{
+		text-align: center;
+		}
+
+	footer p:nth-of-type(1){
+		float: none;	
+		}
+	
+	footer p:nth-of-type(2){
+		float: none;
+		padding-top: 10px;	
+		}
+	
 
 }
 
@@ -656,23 +687,45 @@ section.diferenciais{
 
 .sessao2 img{
 	top: 16px;
-	margin-top: 20px;
-	
-	}
+	margin-top: 20px;	
+}
+
+.chamada1{
+	max-width: none;
+	width: 100%;
+	text-align: center;
+	float: none;
+	margin:170px 0;
+}
+
+.chamada1 h2{
+	font-weight: 300;
+	font-size: 30px;
+	padding: 0 0px;
+	color: white;
+}
+
+.chamada1 p{
+	font-size: 15px;
+	color: white;
+	margin-top: 10px;
+}
+.maprouter{
+	width: 390px;
+	height: 450px;
+}
 	
 footer{
 	text-align: center;
 	}
 
 footer p:nth-of-type(1){
-	float: none;
-	
+	float: none;	
 	}
 
 footer p:nth-of-type(2){
 	float: none;
-	padding-top: 10px;
-	
+	padding-top: 10px;	
 	}
 }
 	

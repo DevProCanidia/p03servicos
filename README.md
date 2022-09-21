@@ -16,9 +16,10 @@ Tecnologias
 =================
 <!--ts-->
 * Construído com Html, CSS e JS 
-* Api do Google Maps
+* Api do Google Maps com marcador personalizado
 * Totalmente personalizável
 * Depoimentos
+* Menu mobile personalizado
 * Otimizado para SEO
 * Compatível com vários navegadores
 * Código fácil de personalizar, limpar e comentado
